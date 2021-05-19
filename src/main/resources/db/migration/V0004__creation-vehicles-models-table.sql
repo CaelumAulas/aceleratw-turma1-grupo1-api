@@ -1,0 +1,7 @@
+CREATE TABLE VEHICLE (
+    id BIGSERIAL,
+    modelo VARCHAR(100) NOT NULL ,
+	ano DECIMAL NOT NULL,
+	valor DECIMAL NOT NULL,
+    CONSTRAINT pk_vehicle PRIMARY KEY (id)
+);

@@ -1,0 +1,5 @@
+CREATE TABLE BRANDS (
+    id BIGSERIAL,
+    name VARCHAR(100) NOT NULL ,
+    CONSTRAINT pk_brands PRIMARY KEY (id)
+);
