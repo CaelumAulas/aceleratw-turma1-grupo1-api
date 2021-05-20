@@ -16,7 +16,7 @@ e digite
 
 Pronto, pode rodar o projeto que ele funcionará corretamente!
 
-### Para utilizar o pgAdmin acesse `http://localhost:16543` e configure da seguinte forma:
+## Para utilizar o pgAdmin acesse `http://localhost:16543` e configure da seguinte forma:
 
 Faça o login de acordo com login e senha configurado:
 
