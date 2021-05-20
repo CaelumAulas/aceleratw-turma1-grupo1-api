@@ -16,10 +16,10 @@ Pronto, pode rodar o projeto que ele funcionará corretamente!
 
 ### Equipe
 
-* [Miguel Soares] (https://github.com/miglsoares)
+* [Miguel Soares](https://github.com/miglsoares)
 
-* [Natália Winter] (https://github.com/nataliawinter)
+* [Natália Winter](https://github.com/nataliawinter)
 
-* [Stella Martins] (https://github.com/stellatw)
+* [Stella Martins](https://github.com/stellatw)
 
-* [Vitor Nascimento] (https://github.com/Vitor-C-Nascimento)
+* [Vitor Nascimento](https://github.com/Vitor-C-Nascimento)
