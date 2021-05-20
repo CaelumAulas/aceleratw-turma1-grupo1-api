@@ -1,6 +1,7 @@
 package br.com.carangobom.users;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import javax.management.RuntimeErrorException;
@@ -20,23 +21,31 @@ public class UserService {
 	@Autowired
 	private UserViewMapper viewMapper;
 	private UserFormMapper formMapper;
-	
-	
-	public List<UserDto> ListAllUsers(){
+
+	public List<UserDto> ListAllUsers() {
 		return repository.findAll().stream().map(viewMapper::map).collect(Collectors.toList());
-				
+
 	}
-	
+
 	public void saveUser(UserForm userForm) {
-		
+
 		// regras de negócio para persistir o usuário
-		
+
 		List<User> users = repository.findUsers(userForm.getLogin());
-		
-			if(!users.isEmpty()) throw new RuntimeErrorException(null, "User already exists");
-		
-		
-		 var user = formMapper.map(userForm);
+
+		if (!users.isEmpty())
+			throw new RuntimeErrorException(null, "User already exists");
+
+		var user = formMapper.map(userForm);
 		repository.save(user);
+	}
+
+	public boolean login(UserForm form) {
+
+		Optional<User> user = repository.findByLogin(form.getLogin());
+		
+		if(user.isEmpty()) throw new RuntimeErrorException(null, "User Not found");
+
+		return user.get().getPassword().equals(form.getPassword());
 	}
 }

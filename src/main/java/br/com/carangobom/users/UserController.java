@@ -36,6 +36,13 @@ public class UserController {
     	
     	return new ResponseEntity<>(HttpStatus.OK);
     }
-
+    
+    @GetMapping(path = "/login")
+    public ResponseEntity<HttpStatus> Login(@RequestBody UserForm userForm){
+    	
+    	if(service.login(userForm)) return new ResponseEntity<>(HttpStatus.OK);
+    	
+    	return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
     
 }
