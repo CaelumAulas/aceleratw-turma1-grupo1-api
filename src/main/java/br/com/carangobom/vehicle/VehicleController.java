@@ -1,6 +1,7 @@
 package br.com.carangobom.vehicle;
 
 import lombok.AllArgsConstructor;
+import lombok.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,11 @@ public class VehicleController {
     @GetMapping
     public List<VehicleDto> list() {
         return service.ListAllVehicles();
+    }
+
+    @GetMapping(value = "/search")
+    public List<VehicleDto> findByBrand(@RequestParam(value = "brand") String brand) {
+        return service.findByBrand(brand);
     }
 
     @PostMapping

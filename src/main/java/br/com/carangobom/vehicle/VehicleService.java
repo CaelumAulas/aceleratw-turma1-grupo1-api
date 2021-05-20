@@ -41,4 +41,8 @@ public class VehicleService {
 
         return true;
     }
+
+    public List<VehicleDto> findByBrand(String brand) {
+        return repository.findByBrand(brand).stream().map(viewMapper::map).collect(Collectors.toList());
+    }
 }
