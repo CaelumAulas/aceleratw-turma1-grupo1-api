@@ -12,18 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
 
-
-
-
 @RestController
 @RequestMapping("/users")
 @AllArgsConstructor
 public class UserController {
 
-    private final UserService service;
+   private final UserService service;
 
-    
-    
     @GetMapping
    public List<UserDto> list() {
         return service.ListAllUsers();
@@ -36,6 +31,4 @@ public class UserController {
     	
     	return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    
 }
