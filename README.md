@@ -16,13 +16,11 @@ e digite
 
 Pronto, pode rodar o projeto que ele funcionará corretamente!
 
-## Para utilizar o pgAdmin acesse `http://localhost:16543` e configure da seguinte forma:
+#### Para utilizar o pgAdmin acesse `http://localhost:16543` e configure da seguinte forma:
 
 Faça o login de acordo com login e senha configurado:
 
-
 ![Webp net-resizeimage (1)](https://user-images.githubusercontent.com/9592064/119029637-44baa580-b97f-11eb-9858-b9504b243614.png)
-
 
 Crie um novo **server**
 
