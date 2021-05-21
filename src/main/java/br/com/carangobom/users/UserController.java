@@ -33,7 +33,7 @@ public class UserController {
     }
 
     
-    @GetMapping(path = "/login")
+    @PostMapping(path = "/login")
     public ResponseEntity<HttpStatus> Login(@RequestBody UserForm userForm){
     	
     	if(service.login(userForm)) return new ResponseEntity<>(HttpStatus.OK);
