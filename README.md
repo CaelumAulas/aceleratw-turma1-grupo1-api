@@ -38,6 +38,11 @@ Pronto! Você já consegue acessar suas tabelas.
 
 ![image](https://user-images.githubusercontent.com/9592064/119031393-6cab0880-b981-11eb-8cb7-64d43cdd617e.png)
 
+#### Deploy para o HEROKU
+Commands
+* [`heroku create`](#heroku-create)
+* [`git push heroku main `](#git-push-heroku-main)
+
 ### Equipe
 
 * [Miguel Soares](https://github.com/miglsoares)
