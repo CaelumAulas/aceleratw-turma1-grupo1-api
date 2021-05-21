@@ -40,7 +40,6 @@ Pronto! Você já consegue acessar suas tabelas.
 
 #### Deploy para o HEROKU
 Commands
-* [`heroku create`](#heroku-create)
 * [`git push heroku main `](#git-push-heroku-main)
 
 ### Equipe
