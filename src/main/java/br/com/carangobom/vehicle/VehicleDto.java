@@ -2,8 +2,6 @@ package br.com.carangobom.vehicle;
 
 import br.com.carangobom.domain.Vehicle;
 
-import java.math.BigDecimal;
-
 public class VehicleDto {
 
 	private String brand;

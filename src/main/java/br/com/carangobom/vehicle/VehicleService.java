@@ -1,14 +1,14 @@
 package br.com.carangobom.vehicle;
 
-import br.com.carangobom.domain.Vehicle;
-import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import javax.management.RuntimeErrorException;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.carangobom.domain.Vehicle;
+import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
