@@ -22,7 +22,6 @@ public class VehicleController {
 
     private final VehicleService service;
 
-
     @GetMapping
     public List<VehicleDto> list() {
         return service.ListAllVehicles();

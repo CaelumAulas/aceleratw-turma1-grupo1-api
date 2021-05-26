@@ -20,10 +20,8 @@ public class VehicleService {
     private VehicleViewMapper viewMapper;
     private VehicleFormMapper formMapper;
 
-
     public List<VehicleDto> ListAllVehicles() {
         return repository.findAll().stream().map(viewMapper::map).collect(Collectors.toList());
-
     }
 
     public void saveVehicle(VehicleForm vehicleForm) {
