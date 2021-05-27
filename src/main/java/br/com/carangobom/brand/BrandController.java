@@ -25,6 +25,7 @@ public class BrandController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @DeleteMapping
     public ResponseEntity<BrandDto> delete(@RequestBody Long id) {
         if (service.delete(id)) {
             return new ResponseEntity<>(HttpStatus.OK);
